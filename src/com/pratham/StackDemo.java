@@ -50,18 +50,10 @@ public class StackDemo {
     }
 
     static boolean isFull(){
-        if(top==size-1){
-            return true;
-        } else{
-            return false;
-        }
+        return top == size - 1;
     }
 
     static boolean isEmpty(){
-        if(top==-1){
-            return true;
-        } else{
-            return false;
-        }
+        return top == -1;
     }
 }
