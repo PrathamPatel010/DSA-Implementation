@@ -40,6 +40,17 @@ public class LinkedListDemo {
         llist.insertEnd(370);
         System.out.println("LinkedList after insertion at end:");
         llist.printlist();
+
+        // deleting element at beginning in LinkedList
+        llist.deleteBeginning();
+        System.out.println("LinkedList after deletion at beginning");
+        llist.printlist();
+    }
+
+    void deleteBeginning(){
+        Node ptr = head;
+        ptr = ptr.next;
+        head = ptr;
     }
 
     void insertBeginning(int new_data){
