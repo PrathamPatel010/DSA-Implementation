@@ -51,18 +51,10 @@ public class SimpleQueue {
     }
 
     static boolean isFull() {
-        if (rear == size - 1) {
-            return true;
-        } else {
-            return false;
-        }
+        return rear == size - 1;
     }
 
     static boolean isEmpty() {
-        if (front == -1) {
-            return true;
-        } else {
-            return false;
-        }
+        return front == -1;
     }
 }

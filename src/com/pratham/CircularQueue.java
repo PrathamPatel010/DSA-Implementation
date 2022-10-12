@@ -41,19 +41,11 @@ public class CircularQueue {
     }
 
     static boolean isFull() {
-        if (front == (rear + 1) % size) {
-            return true;
-        } else {
-            return false;
-        }
+        return front == (rear + 1) % size;
     }
 
     static boolean isEmpty() {
-        if (front == -1) {
-            return true;
-        } else {
-            return false;
-        }
+        return front == -1;
     }
 
     static void enqueue(int val) {
