@@ -45,13 +45,45 @@ public class LinkedListDemo {
         llist.deleteBeginning();
         System.out.println("LinkedList after deletion at beginning");
         llist.printlist();
+
+        // deleting element at end in LinkedList
+        llist.deleteEnd();
+        System.out.println("LinkedList after deletion at end");
+        llist.printlist();
+
+        // deleting specific node
+        llist.deleteSpecific(20);
+        System.out.println("LinkedList after deleting 20");
+        llist.printlist();
     }
 
+    void deleteSpecific(int val){
+        Node ptr = head;
+        Node prev = ptr;
+        Node after = ptr.next;
+        while (ptr.data!=val){
+            prev = ptr;
+            ptr = ptr.next;
+            after = ptr.next;
+        }
+        prev.next = after;
+    }
     void deleteBeginning(){
         Node ptr = head;
         ptr = ptr.next;
         head = ptr;
     }
+
+    void deleteEnd(){
+        Node ptr = head;
+        Node prev = ptr;
+        while (ptr.next!=null){
+            prev = ptr;
+            ptr = ptr.next;
+        }
+        prev.next = null;
+    }
+
 
     void insertBeginning(int new_data){
         if(head==null){
