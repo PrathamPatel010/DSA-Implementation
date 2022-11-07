@@ -28,7 +28,7 @@ public class StackDemo {
     }
 
     static void display(){
-        if (top==-1){
+        if (isEmpty()){
             return;
         }
         for(int i=0;i<=top;i++){
