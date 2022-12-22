@@ -83,5 +83,4 @@ public class DoublyLL {
         ptr.next = newNode;
         newNode.prev = ptr;
     }
-
 }

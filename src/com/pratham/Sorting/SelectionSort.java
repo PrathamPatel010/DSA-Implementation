@@ -12,7 +12,7 @@ public class SelectionSort {
         System.out.println(Arrays.toString(arr));
     }
 
-    // In selection sort, We search for the largest element & put it at the right most index
+    // In selection sort, We search for the largest element in range & put it at the right most index
 //    Time Complexity = O(N^2) because two loops : One for finding the largest element, one for swapping it at right index
     static void selection(int[] arr){
         for (int i=0;i<arr.length-1;i++){

@@ -40,14 +40,21 @@ public class SimpleQueue {
         if (!isFull()) {
             rear++;
             q[rear] = num;
+            if(front==-1){
+                front++;
+            }
+        } else{
+            System.out.println("Queue is full");
         }
     }
 
     static void dequeue() {
         if (!isEmpty()) {
+            int val = q[front];
             front++;
+        } else{
+            System.out.println("Queue is Empty");
         }
-        front++;
     }
 
     static boolean isFull() {
