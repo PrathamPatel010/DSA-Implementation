@@ -1,6 +1,6 @@
 package com.pratham;
 
-public class LinkedListDemo {
+public class SinglyLL {
     Node head;
 
     // creating static inner class so that main() function can access it
@@ -17,7 +17,7 @@ public class LinkedListDemo {
 
     public static void main(String[] args) {
         // creating object to access Node class
-        LinkedListDemo llist = new LinkedListDemo();
+        SinglyLL llist = new SinglyLL();
 
         // Creating a LinkedList consist of 4 Nodes
         Node first = new Node(10);
