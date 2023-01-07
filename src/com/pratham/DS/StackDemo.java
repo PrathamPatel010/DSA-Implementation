@@ -1,4 +1,4 @@
-package com.pratham;
+package com.pratham.DS;
 
 public class StackDemo {
     static int top = -1;

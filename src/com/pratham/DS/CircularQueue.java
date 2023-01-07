@@ -1,4 +1,4 @@
-package com.pratham;
+package com.pratham.DS;
 
 public class CircularQueue {
     static int front = -1;
