@@ -1,4 +1,4 @@
-package com.pratham.DS;
+package com.pratham.StackQueue;
 
 public class StackDemo {
     static int top = -1;
